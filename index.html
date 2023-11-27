@@ -5,43 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="WEBSTUDIO landingpage" />
-    <!-- FONTY preconnect-->
+    <!-- FONTY i STYLE-->
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>WEBSTUDIO Landingpage</title>
   </head>
   <body>
     <!-- NAWIGACJA --------------------------------------------------->
-    <header>
-      <nav>
-        <a href="./index.html">WEB<span>STUDIO</span></a>
-        <ul>
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="./index.html" class="logo-link"
+          >WEB<span class="studio">STUDIO</span></a
+        >
+        <ul class="menu-list">
+          <li><a href="./index.html" class="menu-link">Studio</a></li>
+          <li><a href="./portfolio.html" class="menu-link">Portfolio</a></li>
+          <li><a href="#" class="menu-link">Contacts</a></li>
         </ul>
       </nav>
-      <address>
+      <address class="contact-details">
         <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         <a href="tel:+110001111111">+11 (000) 111-11-11</a>
       </address>
     </header>
+
     <main>
       <!-- MAIN HERO SECTION ----------------------------------------------->
-      <section>
+      <section class="hero-section">
         <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+        <button type="button" class="hero-button">Order Service</button>
       </section>
       <!-- WHY US SECTION-------------------------------------------------->
-      <section>
-        <ul>
+      <section class="why-us-section">
+        <ul class="why-us-list">
           <li>
-            <h3>Strategy</h3>
+            <h3 class="why-us-header">Strategy</h3>
             Our goal is to identify the business problem to walk away with the
             perfect and creative solution.
           </li>
@@ -51,21 +54,21 @@
             within the shortest possible time.
           </li>
           <li>
-            <h3>Diligence</h3>
+            <h3 class="why-us-header">Diligence</h3>
             Research and confirm brands that present the strongest digital
             growth opportunities and minimize risk.
           </li>
           <li>
-            <h3>Technologies</h3>
+            <h3 class="why-us-header">Technologies</h3>
             Design practice focused on digital experiences. We bring forth a
             deep passion for problem-solving.
           </li>
         </ul>
       </section>
       <!-- WHAT ARE WE DOING SECTION -------------------------------------->
-      <section>
-        <h2>What are we doing</h2>
-        <ul>
+      <section class="we-do-section">
+        <h2 class="we-do-header">What are we doing</h2>
+        <ul class="we-do-list">
           <li>
             <img
               src="./images/screen.jpg"
@@ -93,9 +96,10 @@
         </ul>
       </section>
       <!-- OUR TEAM SECTION ----------------------------------------------->
-      <section>
-        <ul>
-          <li>
+      <section class="team-section">
+        <h3 class="team-header">Our Team</h3>
+        <ul class="team-list">
+          <li class="team-card">
             <img
               src="./images/guerrero.jpg"
               alt="man with a dark beard and short hair"
@@ -105,7 +109,7 @@
             <h3>Mark Guerrero</h3>
             <p>Product Designer</p>
           </li>
-          <li>
+          <li class="team-card">
             <img
               src="./images/ford.jpg"
               alt="smiling young man in blue shirt"
@@ -115,7 +119,7 @@
             <h3>Tom Ford</h3>
             <p>Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-card">
             <img
               src="./images/garcia.jpg"
               alt="beautiful young woman with long brown hair in a pink sweater"
@@ -125,7 +129,7 @@
             <h3>Camila Garcia</h3>
             <p>Marketing</p>
           </li>
-          <li>
+          <li class="team-card">
             <img
               src="./images/wilson.jpg"
               alt="smiling man with short stubble and brown hair"
@@ -138,8 +142,10 @@
         </ul>
       </section>
       <!-- FOOTER -------------------------------------------------------------->
-      <footer>
-        <a href="#">WEB<span>STUDIO</span></a>
+      <footer class="footer-section">
+        <a href="./index.html" class="logo-link"
+          >WEB<span class="studio-footer">STUDIO</span></a
+        >
         <p>
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
