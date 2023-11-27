@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
   background-color: var(--white-background);
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .studio {
-  color: var(--primary-text-color);
+  color: var(--second-text-color);
 }
 
 .menu-item {
@@ -74,7 +74,7 @@ body {
 }
 
 .hero-section {
-  background-color: var(--primary-text-color);
+  background-color: var(--second-text-color);
 }
 
 .hero-title {
@@ -98,7 +98,7 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--pressed-state-color);
+  background-color: var(--pressed-state-color);
 }
 
 /* SEKCJA TZY */
@@ -107,7 +107,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
 
@@ -123,8 +123,9 @@ body {
   text-align: center;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--second-text-color);
 }
 
 .team-section {
@@ -135,7 +136,7 @@ body {
   text-align: center;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--second-text-color);
 }
@@ -144,7 +145,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
 
@@ -153,7 +154,7 @@ body {
 }
 
 .job-item {
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.02em;
 }
 
 .studio-footer {
@@ -161,7 +162,7 @@ body {
 }
 
 .footer-section {
-  background-color: var(--primary-text-color);
+  background-color: var(--second-text-color);
 }
 
 .footer-text {
@@ -171,39 +172,30 @@ body {
 /*PORTFOLIO ---------------- */
 
 .filter-button {
-  border: 1px solid var(--accent-color);
-  background: var(--light-background);
+  background-color: var(--light-background);
   color: var(--primary-bradn-color);
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  background: var(--OCEAN, #404bbf);
+  background-color: var(--pressed-state-color);
   color: var(--white-background);
 }
 
-.filter-list {
-  list-style-type: none;
-}
-
-.projects-list > li > h3 {
+.projects-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
 }
 
 .projects-list > li > p {
   color: var(--second-text-color);
-}
-
-.projects-list > li {
-  list-style-type: none;
-  border: 1px solid var(--accent-color);
 }
