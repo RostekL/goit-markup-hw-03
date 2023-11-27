@@ -196,10 +196,6 @@ body {
   color: var(--second-text-color);
 }
 
-.projects-list > li > p {
-  color: var(--second-text-color);
-}
-
 .projects-text {
   color: var(--primary-text-color);
 }
