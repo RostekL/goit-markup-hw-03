@@ -1,9 +1,9 @@
 :root {
   --primary-bradn-color: #4d5ae5; /*IRIS*/
   --pressed-state-color: #404bbf; /*OCEAN*/
-  --primary-text-color: #2e2f42; /*NAVY BLUE*/
+  --primary-text-color: #434455; /*SLATE*/
   --success-valid-color: #31d0aa; /*GREEN*/
-  --second-text-color: #434455; /*SLATE*/
+  --second-text-color: #2e2f42; /*NAVY BLUE*/
   --subtle-text: #8e8f99; /*LIGHT SLATE*/
   --accent-color: #e7e9fc; /*CORNFLOWER*/
   --light-background: #f4f4fd; /*CLOUD*/
@@ -20,58 +20,73 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--primary-text-color);
+  background-color: var(--white-background);
 }
 
-.logo-link {
+.logo {
   color: var(--primary-bradn-color);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 116.667%;
+  line-height: 1.17;
   letter-spacing: 0.54px;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .studio {
   color: var(--primary-text-color);
 }
 
-.menu-list > li > a {
-  color: var(--primary-text-color);
+.menu-item {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.list {
+  list-style-type: none;
+}
+.link {
   text-decoration: none;
 }
 
-.menu-list > li {
-  list-style-type: none;
-}
-
-.menu-link:hover,
-.menu-link:focus {
+.menu-item:hover,
+.menu-item:focus {
   color: var(--pressed-state-color);
 }
 
-.contact-details > a {
-  color: var(--second-text-color);
-  text-decoration: none;
+.contact-details {
   font-style: normal;
+}
+
+.contact-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--pressed-state-color);
 }
 
 .hero-section {
   background-color: var(--primary-text-color);
 }
 
-.hero-section > h1 {
+.hero-title {
   color: var(--white-background);
   font-size: 56px;
   font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 1.12px;
-  width: 496px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .hero-button {
-  border-radius: 4px;
   background: var(--primary-bradn-color);
   color: var(--white-background);
   font-weight: 500;
@@ -81,29 +96,35 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-
-.why-us-list > h3 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--pressed-state-color);
 }
 
-.why-us-list > li {
+/* SEKCJA TZY */
+
+.why-us-header {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02rem;
   color: var(--second-text-color);
-  list-style-type: none;
+}
+
+.why-us-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 .we-do-header {
   font-size: 36px;
+  text-align: center;
   font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
+  line-height: 1.11;
+  letter-spacing: 0.02rem;
   text-transform: capitalize;
-}
-
-.we-do-list {
-  list-style-type: none;
 }
 
 .team-section {
@@ -111,28 +132,28 @@ body {
 }
 .team-header {
   font-size: 36px;
+  text-align: center;
   font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
+  line-height: 1.11;
+  letter-spacing: 0.02rem;
+  text-transform: capitalize;
+  color: var(--second-text-color);
 }
 
-.team-list {
-  list-style-type: none;
+.name-header {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02rem;
+  color: var(--second-text-color);
 }
 
 .team-card {
   background-color: var(--white-background);
 }
 
-.team-card > h3 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
-}
-
-.team-card > p {
-  color: var(--second-text-color);
+.job-item {
+  letter-spacing: 0.02rem;
 }
 
 .studio-footer {
@@ -143,12 +164,13 @@ body {
   background-color: var(--primary-text-color);
 }
 
-.footer-section > p {
+.footer-text {
   color: var(--light-background);
 }
 
+/*PORTFOLIO ---------------- */
+
 .filter-button {
-  border-radius: 4px;
   border: 1px solid var(--accent-color);
   background: var(--light-background);
   color: var(--primary-bradn-color);
@@ -162,10 +184,7 @@ body {
 
 .filter-button:hover,
 .filter-button:focus {
-  border-radius: 4px;
   background: var(--OCEAN, #404bbf);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: var(--white-background);
 }
 
