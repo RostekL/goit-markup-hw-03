@@ -180,13 +180,12 @@ body {
   background-color: var(--pressed-state-color);
 }
 
-/* SEKCJA TZY */
+/* SEKCJA DRUGA */
 .why-us-list {
   display: flex;
   flex-direction: row;
   gap: 24px;
   align-items: center;
-
   margin: 120px auto;
 }
 
@@ -194,6 +193,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 120px 0;
 }
 
 .why-us-item {
@@ -202,6 +202,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   width: 264px;
+}
+
+.why-us-list-point {
+  width: calc((100% - 72px) / 4);
 }
 
 /* SEKCJA CZWARTA */
@@ -277,6 +281,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  /** czy to działa do wszyskich titles? **/
+  margin-bottom: 8px;
 }
 
 .projects-text {
