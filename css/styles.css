@@ -25,6 +25,9 @@ p {
   padding: 0;
   list-style-type: none;
 }
+img {
+  display: block;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -35,6 +38,13 @@ body {
   color: var(--primary-text-color);
   background-color: var(--white-background);
 }
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -52,6 +62,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
 }
 
 .logo {
@@ -63,6 +78,7 @@ body {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   display: block;
+  margin-right: 76px;
 }
 
 .studio {
@@ -71,7 +87,7 @@ body {
 
 .main-navigation {
   display: flex;
-  margin: 25.5px 0px 25.5px 156px;
+  align-items: center;
 }
 
 .menu-list {
