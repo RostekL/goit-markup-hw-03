@@ -13,6 +13,19 @@
   --modal-background-color: #fcfcfc; /*DAIRY*/
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -21,6 +34,24 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   background-color: var(--white-background);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -31,10 +62,22 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  display: block;
 }
 
 .studio {
   color: var(--second-text-color);
+}
+
+.main-navigation {
+  display: flex;
+  margin: 25.5px 0px 25.5px 156px;
+}
+
+.menu-list {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
 }
 
 .menu-item {
@@ -48,6 +91,7 @@ body {
 .list {
   list-style-type: none;
 }
+
 .link {
   text-decoration: none;
 }
@@ -59,6 +103,12 @@ body {
 
 .contact-details {
   font-style: normal;
+}
+
+.contact-details ul {
+  display: flex;
+  gap: 40px;
+  margin-right: 156px;
 }
 
 .contact-item {
@@ -75,6 +125,10 @@ body {
 
 .hero-section {
   background-color: var(--second-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 188px;
 }
 
 .hero-title {
@@ -84,6 +138,7 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  width: 496px;
 }
 
 .hero-button {
@@ -95,19 +150,50 @@ body {
   cursor: pointer;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 48px;
 }
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--pressed-state-color);
 }
 
 /* SEKCJA TZY */
+.why-us-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+
+  margin: 120px auto;
+}
+
+.why-us-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .why-us-item {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  width: 264px;
+}
+
+/* SEKCJA CZWARTA */
+
+.we-do-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.we-do-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 72px auto 120px;
 }
 
 .team-section {
@@ -173,4 +259,9 @@ body {
 
 .projects-text {
   color: var(--primary-text-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
 }
