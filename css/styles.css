@@ -111,6 +111,7 @@ body {
 
 .link {
   text-decoration: none;
+  display: inline-block;
 }
 
 .menu-item:hover,
@@ -333,9 +334,10 @@ body {
   column-gap: 24px;
   row-gap: 48px;
 }
-.projects-list-point {
-  width: calc((100% - 48px) / 3);
+.projects-list-pointis {
+  width: calc((100%-48px) / 3);
 }
+
 .projects-text {
   color: var(--primary-text-color);
 }
