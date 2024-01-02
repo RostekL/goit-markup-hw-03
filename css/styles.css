@@ -72,6 +72,8 @@ body {
 
 .header-container {
   display: flex;
+  justify-content: space-between; /* Elementy w poziomie */
+  align-items: center; /* elementy w pionie */
 }
 
 .logo {
@@ -102,6 +104,7 @@ body {
 }
 
 .menu-item {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -130,7 +133,6 @@ body {
 .contact-details ul {
   display: flex;
   gap: 40px;
-  margin-right: 156px;
 }
 
 .contact-item {
@@ -161,6 +163,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 496px;
+  margin: 0 auto;
 }
 
 .hero-button {
@@ -173,6 +176,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   display: block;
+  margin: 0 auto;
   margin-top: 48px;
   min-width: 169px;
   height: 56px;
@@ -191,7 +195,6 @@ body {
   flex-direction: row;
   gap: 24px;
   align-items: center;
-  margin: 120px auto;
 }
 
 .why-us-section {
@@ -225,7 +228,7 @@ body {
   display: flex;
   gap: 24px;
   align-items: center;
-  margin: 72px auto 120px;
+  margin: 72px auto 0;
 }
 
 .we-do-list-point {
@@ -261,6 +264,7 @@ body {
 }
 .name-card-container {
   padding: 32px 0;
+  text-align: center;
 }
 
 .job-item {
@@ -326,10 +330,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
-  /** czy to działa do wszyskich titles? **/
   margin-bottom: 8px;
-  text-align: center;
 }
 
 .projects-list {
