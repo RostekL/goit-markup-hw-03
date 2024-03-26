@@ -1,0 +1,228 @@
+:root {
+  --iris: #4d5ae5; /*IRIS*/
+  --ocean: #404bbf; /*OCEAN*/
+  --slate: #434455; /*SLATE*/
+  --green: #31d0aa; /*GREEN*/
+  --navyblue: #2e2f42; /*NAVY BLUE*/
+  --lightslate: #8e8f99; /*LIGHT SLATE*/
+  --cornflower: #e7e9fc; /*CORNFLOWER*/
+  --cloud: #f4f4fd; /*CLOUD*/
+  --navybluemodal: #2e2f4266; /*NAVY BLUE MODAL*/
+  --grey: #2e2f42b2; /*GREY*/
+  --white: #ffffff; /*WHITE*/
+  --dairy: #fcfcfc; /*DAIRY*/
+}
+
+* {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  background-color: var(--white);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+/* =========================== HEADER ========================== */
+.header-link {
+  color: var(--iris);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.header-link-span {
+  color: var(--navyblue);
+}
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--ocean);
+}
+
+.contact {
+  font-style: normal;
+}
+.contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--ocean);
+}
+/* =========================== HERO SECTION (1) ========================== */
+.hero {
+  background-color: var(--navyblue);
+}
+
+.hero-title {
+  color: var(--white);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-button-body {
+  background-color: var(--iris);
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+}
+
+.hero-button-body:hover,
+.hero-button-body:focus {
+  background-color: var(--ocean);
+}
+
+/* =========================== DESCRIPTION SECTION (2) ========================== */
+
+.description-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+.description-copy {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* =========================== TEAM SECTION (3) ========================== */
+
+.team {
+  background-color: var(--cloud);
+}
+
+.team-title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navyblue);
+  margin-bottom: 72px;
+}
+.name-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+.team-item {
+  background-color: var(--white);
+}
+
+.name-copy {
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* =========================== PORTFOLIO SECTION (4) ========================== */
+.portfolio-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navyblue);
+  text-transform: capitalize;
+}
+.portfolio-container-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--navyblue);
+}
+
+.portfolio-container-copy {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* =========================== FOOTER SECTION ========================== */
+.footer {
+  background-color: var(--navyblue);
+}
+
+.footer-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.footer-link-span {
+  color: var(--cloud);
+}
+
+.footer-copy {
+  color: var(--cloud);
+}
